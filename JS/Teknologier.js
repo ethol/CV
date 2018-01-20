@@ -88,11 +88,14 @@ function iconRow(faString, hasHalf) {
     //["Java", "", "6", 3, 3, "Funker med objektorientert"],
     ["Azure", "Microsoft", "0", 3, 3, "Stort potensiale"],
     ["SQLServer", "Microsoft, SQL", "0,1,2,3", 4, 5, "Beste SQL systemet jeg har vært bort i så langt."],
+    ["Docraptor", "HTML,CSS,JS", "1", 4, 5, "Veldig bra HTML til PDF generator som er bygget rundt prince."],
+    ["Moment.js", "JS", "1", 3.5, 5, "Hærlig og sårt trengende date rammeverk for javascript"],
+    ["Reacts", "JS", "", 2, 4, "Ganske stort paradigmeskift innen javascript utvikling"],
   
   ];
   
   $(document).ready(function() {
-    $('#example').DataTable({
+    $('#frameworkTable').DataTable({
       
       data: dataSet,
       columns: [{
@@ -142,3 +145,4 @@ function iconRow(faString, hasHalf) {
       }]
     });
   });
+  

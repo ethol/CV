@@ -1,6 +1,6 @@
 
 @import "imports.scss";
-
+$md-min: "only screen and (min-width:992px)";
 .fullWidth {
     width: 100%;
   }
@@ -10,9 +10,52 @@
   }
   table.dataTable.table td.textContent {
     white-space: normal;
-    min-width:600px;
+    min-width:800px;
   }
   
   td.child ul.dtr-details li span.dtr-data{ //datatables fix
     white-space: normal;
   } 
+
+  body{
+    background-color: #f9fbfe;
+  }  
+
+
+  table .doneCheck{
+    
+    font:normal normal normal 14px/1 FontAwesome;
+    font-size:1.5em;
+    text-rendering:auto;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    &:before{
+      content: "\f046";
+    }
+  }
+
+  #expTable td{
+    min-width:100px;
+  }
+  .pInfoSection{
+    margin-top: 20px;
+    font-size: 20px;
+    .pInfoLables p{
+      font-weight: bold;
+      @media #{$md-min} { 
+        float: right;
+      }
+      margin-bottom:0px;
+      
+    }
+    .pValueLables p{
+      @media #{$md-min} { 
+        float: left;
+      }
+    }
+    #profilePic{
+      
+      max-width:200px;
+      margin: 0 auto;
+    }
+  }

@@ -125,11 +125,14 @@ $(document).ready(function () {
 
     var canvas = document.getElementById("lifeLine");
     var ctx = canvas.getContext("2d");
+    // canvas.height = 500;
     var myNewChart = new Chart(ctx, {
         type: 'line',
         data: data,
 
         options: {
+           //responsive: true,
+            // maintainAspectRatio: false,
             scales: {
                 yAxes: [{
                     stacked: true,
@@ -176,19 +179,7 @@ $(document).ready(function () {
         }
     });
 
-    // var canvas = document.getElementById("pieEdu");
-    // var ctx = canvas.getContext("2d");
-    // var myNewChart = new Chart(ctx, {
-    //   type: 'pie',
-    //   data: data
-    // });
 
-    // var canvas = document.getElementById("barEdu");
-    // var ctx = canvas.getContext("2d");
-    // var myNewChart = new Chart(ctx, {
-    //   type: 'bar',
-    //   data: data
-    // });
 
 
 

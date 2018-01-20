@@ -7,6 +7,7 @@ import 'datatables.net-responsive-bs4';
 import '../CSS/style.scss';
 import './Teknologier.js';
 import './chartLifeline.js';
+import './erfaringTable.js';
 
 
 

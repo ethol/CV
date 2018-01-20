@@ -6034,7 +6034,38 @@ table.table td.iconRender {
 
 table.dataTable.table td.textContent {
   white-space: normal;
-  min-width: 600px; }
+  min-width: 800px; }
 
 td.child ul.dtr-details li span.dtr-data {
   white-space: normal; }
+
+body {
+  background-color: #f9fbfe; }
+
+table .doneCheck {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1.5em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  table .doneCheck:before {
+    content: "\F046"; }
+
+#expTable td {
+  min-width: 100px; }
+
+.pInfoSection {
+  margin-top: 20px;
+  font-size: 20px; }
+  .pInfoSection .pInfoLables p {
+    font-weight: bold;
+    margin-bottom: 0px; }
+    @media only screen and (min-width: 992px) {
+      .pInfoSection .pInfoLables p {
+        float: right; } }
+  @media only screen and (min-width: 992px) {
+    .pInfoSection .pValueLables p {
+      float: left; } }
+  .pInfoSection #profilePic {
+    max-width: 200px;
+    margin: 0 auto; }
