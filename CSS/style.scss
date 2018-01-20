@@ -1,0 +1,18 @@
+
+@import "imports.scss";
+
+.fullWidth {
+    width: 100%;
+  }
+  
+  table.table td.iconRender {
+    padding: 3px;
+  }
+  table.dataTable.table td.textContent {
+    white-space: normal;
+    min-width:600px;
+  }
+  
+  td.child ul.dtr-details li span.dtr-data{ //datatables fix
+    white-space: normal;
+  } 
