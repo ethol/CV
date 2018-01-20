@@ -1,0 +1,13 @@
+.fullWidth {
+    width: 100%;
+  }
+  
+  table.table td.iconRender {
+    padding: 3px;
+  }
+  
+  table.table td.textContent {
+    white-space: normal;
+    min-width:200px;
+  }
+  
