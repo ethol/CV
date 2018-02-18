@@ -35,6 +35,31 @@ $.extend($.fn.dataTableExt.oSort, {
 });
 
 
+var prosjektsdt = [{
+  name: "Regnskapsportalen",
+  url: "",
+  desc: "Regnskapsdata gjort tilgjengelig i en skyløsning.",
+  tec: "JavaScript, Chart.js, Datatables, page.js, Bootstrap, require.js, NPM, Grunt, CSS, HTML og Azure autentisering."
+}, {
+  name: "Kommuneportalen",
+  url: "https://www.kommuneportalen.no",
+  desc: "Finnansrapport system for kommuner",
+  tec: "JavaScript, D3.js, Footable, MVC, C#, Dapper, Docraptor, Bower, Bootstrap, NPM, Gulp, Signicat, CSS og HTML."
+}, {
+  name: "Sharepark",
+  url: "",
+  desc: "Parkering deling app",
+  tec: "JavaScript, D3.js, Footable, page.js, require.js, C#, Bootstrap, NPM, Grunt, CSS og HTML."
+}, {
+  name: "EM1 Data Migrering",
+  url: "",
+  desc: "Stor migrering av EM1 data fra et system til et annet.",
+  tec: "C#"
+}, 
+]
+
+
+
 var prosjekts = [{
   name: "Regnskapsportalen",
   url: ""
@@ -45,7 +70,7 @@ var prosjekts = [{
   name: "Sharepark",
   url: ""
 }, {
-  name: "Em1 Data Migrering",
+  name: "EM1 Data Migrering",
   url: ""
 }, {
   name: "Stackoverflow",
@@ -62,44 +87,44 @@ var prosjekts = [{
   url: ""
 },]
 
-
 var dataSetTek = [
 
-  ["JavaScript", "0,1,2,4,6,7", 4.5, 4, ""],
-  ["PHP", "5, 6", 2, 1, "ikke imponert"],
-  ["CSS", "0,1,2,5,6,7", 4, 3, ""],
-  ["HTML", "0,1,2,5,6,7", 3.5, 3, ""],
-  ["C#", "1,2,3", 3.5, 4, "Som Java bare anderledes, men med lync"],
-  ["Java", "6", 3, 3, "Funker med objektorientert"],
+  ["JavaScript", "0,1,2,4,6,7", 4.5, 4],
+  ["PHP", "5, 6", 2, 1],
+  ["CSS", "0,1,2,5,6,7", 4, 3],
+  ["HTML", "0,1,2,5,6,7", 3.5, 3],
+  ["C#", "1,2,3", 3.5, 4],
+  ["Java", "6", 3, 3],
 
 ];
 
 var dataSetFrame = [
-  ["MVC", "C#, .NET, JS, HTML, CSS", "1", 2.5, 3, "Stort potensial og veldig enkelt å sette opp, bra for små solo prosjekter."],
-  ["Grunt", "JS", "0,2", 4, 3, "Velig nyttig med en taskmanager, veldig nyttig i større prosjekter."],
-  ["Page.js", "JS", "0,2", 4.5, 3, "Enkel tynklient for SPA. "],
-  ["NPM", "JS", "0,1,2,7", 4.5, 5, "Veldig glad i NPM"],
-  ["Bower", "JS", "1", 3, 2, "Vil heller bruke NPM"],
-  ["Require.js", "JS", "0,2", 3.5, 3, "Har gjort mye for meg en lengre tid, men jeg vil sansynligvis erstatte det med webpack"],
-  ["Webpack", "JS", "7", 2, 4, "Driver å prøver det ut, virker som det er vanskelig men effektivt når jeg får tilslutt lært det."],
-  ["JQuery", "JS", "0,1,2,4,7", 5, 4, "Bedre enn native DOM manipulasjon. Ajax er jeg også glad i."],
-  ["REST API", "", "0,1,2", 3, 5, "Oversiktlig og funksjonelt"],
-  ["Gulp", "JS", "1", 2, 3, "Samme som grunt bare jeg har mindre erfaring med det."],
-  ["Chart.js", "JS, Canvas", "0, 4", 5, 4, "Veldig bra graf-rammeverk for Canvas, også veldig hurtig å sette opp."],
-  ["D3.js", "JS, SVG", "1,2", 4, 5, "Potensialet til dette rammeverket er kun begrenset av utvikleren. D3 for detaljestyring av grafer. SVG for kvalitet!"],
-  ["Datatables", "JS", "0,4,7", 5, 5, "Mest funksjonelle og utvidbare tabell rammeverket jeg har vært borti."],
-  ["Footable", "JS", "1,2", 3.5, 2, "Enkelt men mangler funksjonalitet som er i Datatable, men har noen fordeler som antall MB og AMD compatibelt"],
-  ["Bootstrap", "JS, CSS", "0,1,2,7", 5, 4, "Veldig enkelt å få til noe som ser bra ut raskt, og det finnes alltid plugin-funksjonalitet."],
-  ["Less", "CSS", "0,2", 3.5, 4, "God css preprocessor"],
-  ["SASS", "CSS", "1,7", 3.5, 3, "Virker bra nesten likt som less, men finner noen mangler sammenlignet."],
-  ["PHP", "PHP", "5, 6", 2, 1, "ikke imponert"],
-  ["IIS", "", "0,1,2", 3, 3, "Ennå ikke nådd noe tak her på hva som kan gjøres."],
-  ["Azure", "", "0,7", 3, 3, "Stort potensiale. Litt rotete foreløpig."],
-  ["SQLServer", "SQL", "0,1,2,3", 4, 5, "Beste SQL systemet jeg har vært bort i så langt."],
-  ["Docraptor", "HTML, CSS, JS, Prince", "1", 4, 5, "Veldig bra HTML til PDF generator som er bygget rundt prince."],
-  ["Moment.js", "JS", "2", 3.5, 5, "Herlig og sårt trengende date rammeverk for javascript"],
-  ["React", "JS", "", 2, 4, "Ganske stort paradigmeskift innen javascript utvikling"],
-  ["Swing", "Java", "6", 3, 4, "Veldig gammeldags, men likte det da jeg jobbet med det"],
+  ["MVC", "C#, .NET, JS, HTML, CSS", "1", 2.5, 3, "Rammeverk hvor frontend og backend er sammensatt på en strukturert måte. API og Webside sammen."],
+  ["Grunt", "JS", "0,2", 4, 3, "JavaScript taskmanager, veldig nyttig i større prosjekter."],
+  ["Page.js", "JS", "0,2", 4.5, 3, "Enkel tynklient for SPA."],
+  ["NPM", "JS", "0,1,2,7", 4.5, 5, "Package manager som kan brukes til å enkelt laste ned javascript biblotek og rammeverk, og i tilegg kjøre skript."],
+  ["Bower", "JS", "1", 3, 2, "Lignende NPM bare litt mer begrenset utvalg."],
+  ["Require.js", "JS", "0,2", 3.5, 3, "Veldig kraftig modul og optimaliserings verktøy for JavaScript."],
+  ["Webpack", "JS", "7", 2, 4, "Veldig kraftig modul og optimaliserings verktøy for JavaScript."],
+  ["JQuery", "JS", "0,1,2,4,7", 5, 4, "JavaScript rammeverk DOM manipulasjon, AJAX, Cross-platform."],
+  ["REST API", "", "0,1,2", 3, 5, "API Web Standard."],
+  ["Gulp", "JS", "1", 2, 3, "JavaScript taskmanager, veldig nyttig i større prosjekter."],
+  ["Chart.js", "JS, Canvas", "0, 4", 5, 4, "Graf-rammeverk for Canvas."],
+  ["D3.js", "JS, SVG", "1,2", 4, 5, "Grafikk rammeverk med stor evene for detaljestyring av grafer. Høy læringskurve, men høyt potensial."],
+  ["Datatables", "JS", "0,4,7", 5, 5, "Meget funksjonell og utvidbar tabell rammeverket."],
+  ["Footable", "JS", "1,2", 3.5, 3, "Tabell rammeverk for responsive tabeller."],
+  ["Bootstrap", "JS, CSS", "0,1,2,7", 5, 4, "Biblotek for responsive webdesign."],
+  ["Less", "CSS", "0,2", 3.5, 4, "CSS preprocessor."],
+  ["SASS", "CSS", "1,7", 3.5, 3, "CSS preprocessor."],
+  ["IIS", "", "0,1,2", 3, 3, "Web server løsning til microsoft."],
+  ["Azure", "", "0,7", 3, 3, "Skyløsning for blandt annet: Hosting og autentisering."],
+  ["SQLServer", "SQL", "0,1,2,3", 4, 5, "Microsoft sin SQL løsning"],
+  ["Docraptor", "HTML, CSS, JS, Prince", "1", 4, 5, "HTML, CSS og JavaScript til PDF generator som er bygget på Prince."],
+  ["Moment.js", "JS", "2", 3.5, 5, "Date rammeverk for javascript"],
+  ["React", "JS", "", 2, 4, "JavaScript rammeverk"],
+  ["Swing", "Java", "6", 3, 4, "UI rammeverk"],
+  ["Postman", "", "0,1,2", 3, 4, "API Testing verktøy"],
+  ["Fiddle", "", "0,1,2", 3, 4, "Package inspector"],
 ];
 
 
@@ -109,7 +134,7 @@ var frameColumns = [
   }, {
     title: "Teknologi", responsivePriority: 3,
   }, {
-    title: "Prosjekter", class: "textContent", responsivePriority: 4,
+    title: "Brukt på", class: "textContent", responsivePriority: 4,
     render: function (data, type, row, meta) {
       var split = data.split(",");
       if (!split[0]) {
@@ -135,14 +160,14 @@ var frameColumns = [
     render: iconRow("fa-heart")
 
   },
-  { title: "Mine tenker", class: "textContent", responsivePriority: 9999 }
+  { title: "Hva er dette?", class: "textContent", responsivePriority: 9999 }
 ]
 
 var tekColumns = [
   {
     title: "Rammeverk", responsivePriority: 0,
   }, {
-    title: "Prosjekter", class: "textContent", responsivePriority: 4,
+    title: "Brukt på", class: "textContent", responsivePriority: 4,
     render: function (data, type, row, meta) {
       var split = data.split(",");
       if (!split[0]) {
@@ -170,6 +195,8 @@ var tekColumns = [
   }
   
 ]
+
+
 
 function createframeTable(target, dataSet, columnsDef) {
   target.DataTable({
@@ -211,7 +238,34 @@ function createTekTable(target, dataSet, columnsDef) {
   });
 }
 
+function createProjTable(target, dataSet) {
+  target.DataTable({
+    data: dataSet,
+    columns: [
+      {
+        title: "Prosjekt", data:'name', responsivePriority: 0,
+        render: function (data, type, row, meta) {
+          if(row.url)
+         return "<a target='_blank' href='" + row.url + "'>" + data + "</a>";
+         else
+         return data;
+        }
+      },
+      {
+        title: "Beskrivelse", data :"desc"
+      },
+      {
+        title: "Teknologier", data :"tec"
+      }
+    ],
+    "paging":   false,
+    "info":     false,
+    "searching": false,
+  });
+}
+
 $(document).ready(function () {
   createframeTable($("#frameworkTable"), dataSetFrame, frameColumns);
   createTekTable($("#TekTable"), dataSetTek, tekColumns);
+  createProjTable($("#projectsTable"), prosjektsdt)
 });
