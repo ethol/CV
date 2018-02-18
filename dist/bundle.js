@@ -67220,22 +67220,22 @@ var prosjektsdt = [{
   name: "Regnskapsportalen",
   url: "",
   desc: "Regnskapsdata gjort tilgjengelig i en skyløsning.",
-  tec: "JavaScript, Chart.js, Datatables, page.js, Bootstrap, require.js, NPM, Grunt, CSS, HTML og Azure autentisering."
+  tec: "JavaScript, Chart.js, Datatables, page.js, Bootstrap, SQLServer, require.js, NPM, Grunt, CSS, HTML og Azure autentisering."
 }, {
   name: "Kommuneportalen",
   url: "https://www.kommuneportalen.no",
-  desc: "Finnansrapport system for kommuner",
-  tec: "JavaScript, D3.js, Footable, MVC, C#, Dapper, Docraptor, Bower, Bootstrap, NPM, Gulp, Signicat, CSS og HTML."
+  desc: "Finnansrapport system for kommuner.",
+  tec: "JavaScript, D3.js, Footable, MVC, C#, Dapper, Docraptor, Bower, SQLServer, Bootstrap, NPM, Gulp, Signicat, CSS og HTML."
 }, {
   name: "Sharepark",
   url: "",
-  desc: "Parkering deling app",
-  tec: "JavaScript, D3.js, Footable, page.js, require.js, C#, Bootstrap, NPM, Grunt, CSS og HTML."
+  desc: "Parkering deling app.",
+  tec: "JavaScript, D3.js, Footable, page.js, require.js, C#, IIS, Bootstrap, NPM, Grunt, CSS og HTML."
 }, {
   name: "EM1 Data Migrering",
   url: "",
   desc: "Stor migrering av EM1 data fra et system til et annet.",
-  tec: "C#"
+  tec: "C#."
 }, 
 ]
 
