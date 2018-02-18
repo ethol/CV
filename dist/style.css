@@ -6069,3 +6069,7 @@ table .doneCheck {
   .pInfoSection #profilePic {
     max-width: 200px;
     margin: 0 auto; }
+
+h2 {
+  margin-top: 45px;
+  margin-bottom: 15px; }

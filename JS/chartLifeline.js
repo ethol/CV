@@ -115,7 +115,7 @@ var data = {
     ]
 };
 for(var i = 0; i<99; i++){
-    data.datasets[3].data[i] = 16 
+    data.datasets[3].data[i] = 17 
     - (data.datasets[0].data[i] ? Math.max(data.datasets[0].data[i], 0) : 0)
     - (data.datasets[1].data[i] ? Math.max(data.datasets[1].data[i], 0) : 0) 
     - (data.datasets[2].data[i] ? Math.max(data.datasets[2].data[i], 0) : 0) 
@@ -138,7 +138,7 @@ $(document).ready(function () {
                     stacked: true,
                     ticks: {
                         min: 0,
-                        max:14,
+                        max:16,
                         callback: function (value) {
                             return value + " t"
                         },

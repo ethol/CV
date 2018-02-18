@@ -12,8 +12,8 @@ $(document).ready(function () {
                     var html = "";
                     $.each(datetimes, function (i, e) {
                         if (parseInt(e)) {
-                            html += new Moment(parseInt(e.trim())).format("MMM YYYY "); 
-                        }else{
+                            html += new Moment(parseInt(e.trim())).format("MMM YYYY ");
+                        } else {
                             html += e;
                         }
                     })
@@ -23,6 +23,9 @@ $(document).ready(function () {
             },
         ],
         "order": [
-          ],
+        ],
+        "paging": false,
+        "info": false,
+        "searching": false,
     })
 });
